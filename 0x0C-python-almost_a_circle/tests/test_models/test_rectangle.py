@@ -237,7 +237,7 @@ class TestRectangle_instantiation(unittest.TestCase):
                 Rectangle(1, bytearray(b'abcdefg'))
 
         def test_memoryview_height(self):
-            with self.assertRaisesRegex(TypeError, "height must be an integer")
+            with self.assertRaisesRegex(TypeError, "height must be an integer"):
             Rectangle(1, memoryview(b'abcedfg'))
 
         def test_inf_height(self):
